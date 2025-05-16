@@ -18,7 +18,7 @@ function App() {
     formData.append('file', selectedFile);
   
     try {
-      const response = await fetch('http://localhost:8000/upload', {
+      const response = await fetch('https://invoiceextractor-ik2n.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
@@ -45,7 +45,7 @@ function App() {
     formData.append('file', selectedFile);
   
     try {
-      const response = await fetch('http://localhost:8000/upload-csv', {
+      const response = await fetch('https://invoiceextractor-ik2n.onrender.com/upload-csv', {
         method: 'POST',
         body: formData,
       });
